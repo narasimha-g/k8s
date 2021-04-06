@@ -15,6 +15,6 @@ spec:
    spec:
     containers:
     - name: my-jenkins-container
-      image: narasimha433/mytom
+      image: narasimha433/myjavamc:1
       ports:
       - containerPort: 8080
