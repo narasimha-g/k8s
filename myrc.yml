@@ -11,10 +11,8 @@ spec:
 
   template:
    metadata:
-    name: myapp
     labels:
      name: myapp
-
    spec:
     containers:
      - name: mynginx
