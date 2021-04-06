@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: narasimha-javaapp-container
-        image: narasimha433/mynewjavaapp:2
+        image: narasimha433/mynewjavaapp:3
         ports:
         - containerPort: 8080
