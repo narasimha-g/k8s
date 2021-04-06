@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController 
+metadata:
+ name: my-rcsvc1
+spec:
+  replicas: 2
+  selector:
+   app: narasimha-app
+  
+  template:
+   metadata:
+    labels:
+     app: narasimha-app
+
+   spec:
+    containers:
+    - name: my-jenkins-container
+      image: narasimha433/mytom
+      ports:
+      - containerPort: 8080
