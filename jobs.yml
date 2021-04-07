@@ -11,5 +11,5 @@ spec:
    - name: py
      image: python
      command: ["python", "SUCCESS"]
-     restartPolicy: Never
+   restartPolicy: Never
   
