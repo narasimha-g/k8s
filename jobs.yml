@@ -8,8 +8,8 @@ spec:
    name: py
   spec:
    containers:
-   - name: py
+   - name: my py
      image: python
-     command: ["python"]
+     command: ["bin/bash"]
    restartPolicy: Never
   
