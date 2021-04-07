@@ -5,14 +5,14 @@
     spec:
      template:
        metadata:
-         name: py
+         name: countdown
        spec:
         containers:
-         - name: my py
+         - name: counter 
            image: python
            command:
            - "bin/bash"
            - "-c"
-           - "for i in 9876543210 ; do each $i ; done"
+           - "for i in 987654321; do each $i ; done"
         restartPolicy: Never
   
