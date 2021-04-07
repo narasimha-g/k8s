@@ -1,15 +1,18 @@
-apiVersion: batch/v1
-kind: Job 
-metadata: 
- name: py 
-spec:
- template:
-  metadata:
-   name: py
-  spec:
-   containers:
-   - name: my py
-     image: python
-     command: ["bin/bash"]
-   restartPolicy: Never
+    apiVersion: batch/v1
+    kind: Job 
+    metadata: 
+      name: countdown
+    spec:
+     template:
+       metadata:
+         name: py
+       spec:
+        containers:
+         - name: my py
+           image: python
+           command:
+           - "bin/bash"
+           - "-c"
+           - "for i in 9876543210 ; do each $i ; done"
+        restartPolicy: Never
   
