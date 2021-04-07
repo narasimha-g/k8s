@@ -10,6 +10,6 @@ spec:
    containers:
    - name: py
      image: python
-     command: ["python", "SUCCESS"]
+     command: ["python", "success"]
    restartPolicy: Never
   
